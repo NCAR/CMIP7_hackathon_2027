@@ -1,7 +1,9 @@
 # In-person hubs. Update "venue" and "details" as they're confirmed.
+# "venue_url" is optional — if set, the venue name becomes a link.
 - city: "Boulder"
   country: "Colorado, USA"
   venue: "NSF NCAR Mesa Laboratory"
+  venue_url: "https://scied.ucar.edu/visit/plan-trip"
   primary: true
   details: ""
 - city: "Taipei"

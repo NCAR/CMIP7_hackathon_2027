@@ -67,7 +67,7 @@ layout: default
         <div class="card{% if h.primary %} card-primary{% endif %}">
           {% if h.primary %}<span class="badge">Primary hub</span>{% endif %}
           <h3>{{ h.city }}</h3>
-          <p class="hub-where">{{ h.venue }}<br>{{ h.country }}</p>
+          <p class="hub-where">{% if h.venue_url %}<a href="{{ h.venue_url }}">{{ h.venue }}</a>{% else %}{{ h.venue }}{% endif %}<br>{{ h.country }}</p>
           {% if h.details != "" %}<p>{{ h.details }}</p>{% endif %}
         </div>
       {% endfor %}
