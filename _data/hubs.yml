@@ -2,6 +2,7 @@
 - city: "Boulder"
   country: "Colorado, USA"
   venue: "NSF NCAR Mesa Laboratory"
+  primary: true
   details: ""
 - city: "Taipei"
   country: "Taiwan"

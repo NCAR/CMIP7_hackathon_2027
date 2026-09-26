@@ -64,7 +64,8 @@ layout: default
     <p>The hackathon runs in person at three hubs over the same three days.</p>
     <div class="cards">
       {% for h in site.data.hubs %}
-        <div class="card">
+        <div class="card{% if h.primary %} card-primary{% endif %}">
+          {% if h.primary %}<span class="badge">Primary hub</span>{% endif %}
           <h3>{{ h.city }}</h3>
           <p class="hub-where">{{ h.venue }}<br>{{ h.country }}</p>
           {% if h.details != "" %}<p>{{ h.details }}</p>{% endif %}
