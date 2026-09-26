@@ -130,8 +130,14 @@ a:hover { color: var(--accent-dark); }
 /* Organizers */
 .subhead { font-size: 1.1rem; margin: 32px 0 12px; }
 .contact-list { list-style: none; margin: 0; padding: 0; }
-.contact-list li { display: flex; flex-direction: column; padding: 6px 0; }
-.contact-list a { overflow-wrap: anywhere; font-size: 15px; }
+.contact-groups { display: flex; flex-direction: column; gap: 12px; }
+.contact-groups .card { padding: 16px 20px; }
+.contact-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; padding: 4px 0; }
+.contact-list strong { min-width: 150px; }
+.contact-list a { overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .contact-list li { flex-direction: column; gap: 0; padding: 6px 0; }
+}
 .committee { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 10px; }
 .committee li { background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: 4px 14px; font-size: 15px; }
 .people { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 24px; }

@@ -118,7 +118,7 @@ layout: default
     <h2>Organizers</h2>
     <p>The hackathon is organized by {{ e.organized_by }}.</p>
     <h3 class="subhead">Organizing contacts</h3>
-    <div class="cards">
+    <div class="contact-groups">
       {% for group in site.data.contacts %}
         <div class="card">
           <h3>{{ group.hub }}</h3>
@@ -130,7 +130,7 @@ layout: default
         </div>
       {% endfor %}
     </div>
-    <h3 class="subhead">Organizing committee</h3>
+    <h3 class="subhead">Other organizing committee members</h3>
     <ul class="committee">
       {% for name in site.data.committee %}<li>{{ name }}</li>{% endfor %}
     </ul>
