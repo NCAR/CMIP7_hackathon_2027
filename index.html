@@ -124,7 +124,7 @@ layout: default
           <h3>{{ group.hub }}</h3>
           <ul class="contact-list">
             {% for c in group.people %}
-              <li><strong>{{ c.name }}</strong><a href="mailto:{{ c.email }}">{{ c.email }}</a></li>
+              <li><strong>{{ c.name }}</strong> <a href="mailto:{{ c.email }}">{{ c.email }}</a></li>
             {% endfor %}
           </ul>
         </div>
