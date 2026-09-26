@@ -37,7 +37,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <p>{{ site.title }} · Questions? Contact
-        {% for c in site.data.contacts %}<a href="mailto:{{ c.email }}">{{ c.name }}</a>{% unless forloop.last %} or {% endunless %}{% endfor %}.</p>
+        {% for c in site.data.contacts[0].people %}<a href="mailto:{{ c.email }}">{{ c.name }}</a>{% unless forloop.last %} or {% endunless %}{% endfor %}.</p>
     </div>
   </footer>
 </body>

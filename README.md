@@ -11,7 +11,8 @@ Most updates don't need any HTML:
 | Title, description, dates, application link, contact email | `_config.yml` |
 | Hub locations | `_data/hubs.yml` |
 | Supporter logos | `_data/supporters.yml` (image files in `logos/`) |
-| Organizing contacts | `_data/contacts.yml` |
+| Organizing contacts (by hub) | `_data/contacts.yml` |
+| Organizing committee | `_data/committee.yml` |
 | FAQ | `_data/faq.yml` |
 | About, Apply, and Schedule text | `index.html` |
 | Code of conduct (hidden until `published: false` is removed) | `code-of-conduct.md` |

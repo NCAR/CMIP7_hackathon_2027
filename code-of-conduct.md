@@ -20,6 +20,6 @@ regardless of background, identity, career stage, or experience level.
 disruption of the event.
 
 **Reporting:** If you experience or witness unacceptable behavior, contact the organizers:
-{% for c in site.data.contacts %}[{{ c.name }}](mailto:{{ c.email }}){% unless forloop.last %} or {% endunless %}{% endfor %}. All reports will be handled confidentially.
+{% for c in site.data.contacts[0].people %}[{{ c.name }}](mailto:{{ c.email }}){% unless forloop.last %} or {% endunless %}{% endfor %}. All reports will be handled confidentially.
 
 </div></div>

@@ -23,7 +23,7 @@ event:
   # anything committed here is visible to anyone who views the repository.
   application_url: ""
   application_deadline: "October 31, 2026"
-  organized_by: "The CLIVAR CEMT-MV Research Focus"
+  organized_by: "the CLIVAR CEMT-MV Research Focus"
 
 markdown: kramdown
 exclude:

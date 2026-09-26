@@ -1,5 +1,15 @@
-# Organizing contacts, shown in the Organizers section and the footer.
-- name: "Isla Simpson"
-  email: "islas@ucar.edu"
-- name: "Tiffany Shaw"
-  email: "tas1@uchicago.edu"
+# Organizing contacts, grouped by hub. The first hub's contacts also appear in the site footer.
+- hub: "Boulder"
+  people:
+    - name: "Isla Simpson"
+      email: "islas@ucar.edu"
+    - name: "Tiffany Shaw"
+      email: "tas1@uchicago.edu"
+- hub: "Taipei"
+  people:
+    - name: "Yen-Ting Huang"
+      email: "ythwang@ntu.edu.tw"
+- hub: "Tokyo"
+  people:
+    - name: "Yu Kosaka"
+      email: "ykosaka@atmos.rcast.u-tokyo.ac.jp"
