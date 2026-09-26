@@ -17,6 +17,19 @@ layout: default
     {% else %}
       <span class="button button-disabled">Applications opening soon</span>
     {% endif %}
+
+    <div class="hero-supporters">
+      <p class="hero-supporters-label">Supported by</p>
+      <ul class="logos">
+        {% for s in site.data.supporters %}
+          <li{% if s.fill %} class="fill"{% endif %}>
+            {% if s.url != "" %}<a href="{{ s.url }}">{% endif %}
+            <img src="{{ s.logo | relative_url }}" alt="{{ s.name }}">
+            {% if s.url != "" %}</a>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -61,26 +74,7 @@ layout: default
   </div>
 </section>
 
-<section id="schedule" class="section">
-  <div class="wrap">
-    <h2>Schedule</h2>
-    <p class="muted">Draft schedule. Times are local to each hub and subject to change.</p>
-    <div class="schedule">
-      {% for day in site.data.schedule %}
-        <div class="day">
-          <h3>{{ day.day }}</h3>
-          <ul>
-            {% for s in day.sessions %}
-              <li><span class="time">{{ s.time }}</span><span>{{ s.title }}</span></li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section id="apply" class="section section-alt">
+<section id="apply" class="section">
   <div class="wrap">
     <h2>Apply</h2>
     <p>Participation is by application, and applications are due <strong>{{ e.application_deadline }}</strong>.
@@ -96,6 +90,13 @@ layout: default
     {% else %}
       <p class="muted">The application form will be posted here when it opens.</p>
     {% endif %}
+  </div>
+</section>
+
+<section id="schedule" class="section section-alt">
+  <div class="wrap">
+    <h2>Schedule</h2>
+    <p>The schedule is still under development and will be posted here.</p>
   </div>
 </section>
 
@@ -121,21 +122,6 @@ layout: default
         <li>
           <strong>{{ c.name }}</strong>
           <a href="mailto:{{ c.email }}">{{ c.email }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-
-<section id="supporters" class="section">
-  <div class="wrap">
-    <h2>Supported by</h2>
-    <ul class="logos">
-      {% for s in site.data.supporters %}
-        <li>
-          {% if s.url != "" %}<a href="{{ s.url }}">{% endif %}
-          <img src="{{ s.logo | relative_url }}" alt="{{ s.name }}" loading="lazy">
-          {% if s.url != "" %}</a>{% endif %}
         </li>
       {% endfor %}
     </ul>

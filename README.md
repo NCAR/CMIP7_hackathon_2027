@@ -11,10 +11,9 @@ Most updates don't need any HTML:
 | Title, description, dates, application link, contact email | `_config.yml` |
 | Hub locations | `_data/hubs.yml` |
 | Supporter logos | `_data/supporters.yml` (image files in `logos/`) |
-| Schedule | `_data/schedule.yml` |
 | Organizing contacts | `_data/contacts.yml` |
 | FAQ | `_data/faq.yml` |
-| About and Register text | `index.html` |
+| About, Apply, and Schedule text | `index.html` |
 | Code of conduct (hidden until `published: false` is removed) | `code-of-conduct.md` |
 | Colors | top of `assets/css/style.css` |
 

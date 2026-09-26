@@ -1,9 +1,10 @@
-# Logos shown in the "Supported by" section. Image files live in /logos.
+# Logos shown under "Supported by" in the top banner. Image files live in /logos.
 - name: "CLIVAR"
   logo: "logos/clivar.jpeg"
   url: "https://www.clivar.org/"
 - name: "CMIP International Project Office"
   logo: "logos/CMIP_Logo_RGB_Positive.webp"
+  fill: true   # image has lots of built-in whitespace, so let it use the whole tile
   url: "https://wcrp-cmip.org/people/cmip-ipo/"
 - name: "Spark Climate Solutions"
   logo: "logos/spark_logo.png"
