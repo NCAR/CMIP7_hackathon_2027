@@ -1,0 +1,13 @@
+# Logos shown in the "Supported by" section. Image files live in /logos.
+- name: "CLIVAR"
+  logo: "logos/clivar.jpeg"
+  url: "https://www.clivar.org/"
+- name: "CMIP International Project Office"
+  logo: "logos/CMIP_Logo_RGB_Positive.webp"
+  url: "https://wcrp-cmip.org/people/cmip-ipo/"
+- name: "Spark Climate Solutions"
+  logo: "logos/spark_logo.png"
+  url: "https://www.sparkclimate.org/"
+- name: "NSF National Center for Atmospheric Research"
+  logo: "logos/logo-ncar.avif"
+  url: "https://ncar.ucar.edu/"

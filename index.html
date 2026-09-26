@@ -1,0 +1,143 @@
+---
+layout: default
+---
+{% assign e = site.event %}
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ e.format }}</p>
+    <h1>{{ site.title }}</h1>
+    <p class="lede">{{ site.description }}</p>
+    <dl class="facts">
+      <div><dt>When</dt><dd>{{ e.dates }}</dd></div>
+      <div><dt>Where</dt><dd>{{ e.location }}</dd></div>
+      <div><dt>Apply by</dt><dd>{{ e.application_deadline }}</dd></div>
+    </dl>
+    {% if e.application_url != "" %}
+      <a class="button" href="{{ e.application_url }}">Apply now</a>
+    {% else %}
+      <span class="button button-disabled">Applications opening soon</span>
+    {% endif %}
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>The goal of this hackathon is to develop project ideas and collaborations towards analysis of
+       the CMIP7 simulations now being produced, particularly the representation of historical trends
+       and variability in this new generation of models. It will include some lectures and
+       demonstrations on how to use and analyze CMIP data, but the bulk of the time will be spent on
+       collaborative projects.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Collaborate</h3>
+        <p>Join a small team around a science question and work on it together over the event.</p>
+      </div>
+      <div class="card">
+        <h3>Learn</h3>
+        <p>Get hands-on experience accessing and analyzing CMIP7 data with modern tools.</p>
+      </div>
+      <div class="card">
+        <h3>Share</h3>
+        <p>Present results at the end of the event and publish your team's code openly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="locations" class="section section-alt">
+  <div class="wrap">
+    <h2>Locations</h2>
+    <p>The hackathon runs in person at three hubs over the same three days.</p>
+    <div class="cards">
+      {% for h in site.data.hubs %}
+        <div class="card">
+          <h3>{{ h.city }}</h3>
+          <p class="hub-where">{{ h.venue }}<br>{{ h.country }}</p>
+          {% if h.details != "" %}<p>{{ h.details }}</p>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="section">
+  <div class="wrap">
+    <h2>Schedule</h2>
+    <p class="muted">Draft schedule. Times are local to each hub and subject to change.</p>
+    <div class="schedule">
+      {% for day in site.data.schedule %}
+        <div class="day">
+          <h3>{{ day.day }}</h3>
+          <ul>
+            {% for s in day.sessions %}
+              <li><span class="time">{{ s.time }}</span><span>{{ s.title }}</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="apply" class="section section-alt">
+  <div class="wrap">
+    <h2>Apply</h2>
+    <p>Participation is by application, and applications are due <strong>{{ e.application_deadline }}</strong>.
+       The hackathon is open to all career stages.</p>
+    <p>Capacity at each hub is limited, and a limited amount of travel support is available thanks to
+       Spark Climate Solutions and the CMIP IPO. Priority for travel support will be given to
+       early-career researchers (within 10 years of PhD).</p>
+    <p>If we receive more applications than places, or more requests for travel support than funding
+       available, we will select participants based on career stage and the relevance of their
+       interests and proposed research to the hackathon goals.</p>
+    {% if e.application_url != "" %}
+      <a class="button" href="{{ e.application_url }}">Go to the application form</a>
+    {% else %}
+      <p class="muted">The application form will be posted here when it opens.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    {% for item in site.data.faq %}
+      <details class="faq">
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a }}</p>
+      </details>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="organizers" class="section section-alt">
+  <div class="wrap">
+    <h2>Organizers</h2>
+    <p>The hackathon is organized by {{ e.organized_by }}.</p>
+    <h3 class="subhead">Organizing contacts</h3>
+    <ul class="people">
+      {% for c in site.data.contacts %}
+        <li>
+          <strong>{{ c.name }}</strong>
+          <a href="mailto:{{ c.email }}">{{ c.email }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="supporters" class="section">
+  <div class="wrap">
+    <h2>Supported by</h2>
+    <ul class="logos">
+      {% for s in site.data.supporters %}
+        <li>
+          {% if s.url != "" %}<a href="{{ s.url }}">{% endif %}
+          <img src="{{ s.logo | relative_url }}" alt="{{ s.name }}" loading="lazy">
+          {% if s.url != "" %}</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

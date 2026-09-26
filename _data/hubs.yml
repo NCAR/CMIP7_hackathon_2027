@@ -1,0 +1,13 @@
+# In-person hubs. Update "venue" and "details" as they're confirmed.
+- city: "Boulder"
+  country: "Colorado, USA"
+  venue: "NSF NCAR Mesa Laboratory"
+  details: ""
+- city: "Taipei"
+  country: "Taiwan"
+  venue: "National Taiwan University (NTU)"
+  details: "Venue details coming soon."
+- city: "Tokyo"
+  country: "Japan"
+  venue: "University of Tokyo"
+  details: "Venue details coming soon."
