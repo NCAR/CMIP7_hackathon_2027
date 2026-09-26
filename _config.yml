@@ -5,10 +5,10 @@ description: >-
   for analyzing the new generation of CMIP7 simulations, held at hubs in
   Boulder, Taipei, and Tokyo.
 
-# The repo will live under NCAR's GitHub account, so set this to "/<repo-name>",
+# The repo lives under a personal GitHub account, so set this to "/<repo-name>",
 # e.g. "/clivar-cmip7-hackathon". Leave empty only for a <name>.github.io repo.
 baseurl: "/CMIP7_hackathon_2027"
-url: "https://ncar.github.io"
+url: "https://islasimpson.github.io"
 
 # While true, a banner says the site is under construction and search engines
 # are asked not to index it. Set to false when the site is ready to launch.
