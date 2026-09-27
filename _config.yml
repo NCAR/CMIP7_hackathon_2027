@@ -1,9 +1,9 @@
 # Site settings — edit these first.
 title: CLIVAR CMIP7 Hackathon
 description: >-
-  A three-day, in-person hackathon to develop project ideas and collaborations
-  for analyzing the new generation of CMIP7 simulations, held at hubs in
-  Boulder, Taipei, and Tokyo.
+  A three-day, in-person hackathon analyzing how the new generation of CMIP7
+  models represents historical trends and multidecadal variability, held at
+  hubs in Boulder, Taipei, and Tokyo.
 
 # The repo lives under a personal GitHub account, so set this to "/<repo-name>",
 # e.g. "/clivar-cmip7-hackathon". Leave empty only for a <name>.github.io repo.
