@@ -7,8 +7,8 @@ description: >-
 
 # The repo lives under a personal GitHub account, so set this to "/<repo-name>",
 # e.g. "/clivar-cmip7-hackathon". Leave empty only for a <name>.github.io repo.
-baseurl: "/CMIP7_hackathon_2027_TEMPORARY"
-url: "https://islasimpson.github.io"
+baseurl: "/CMIP7_hackathon_2027"
+url: "https://ncar.github.io"
 
 # While true, a banner says the site is under construction and search engines
 # are asked not to index it. Set to false when the site is ready to launch.
