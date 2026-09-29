@@ -19,9 +19,6 @@ event:
   dates: "January 6–8, 2027"
   format: "In person at three hubs"
   location: "Boulder · Taipei · Tokyo"
-  # Leave empty until the application form is ready to go public —
-  # anything committed here is visible to anyone who views the repository.
-  application_url: ""
   application_deadline: "October 24th, 2026"
   decision_deadline: "October 31st, 2026"
   organized_by: "the CLIVAR CEMT-MV Research Focus"

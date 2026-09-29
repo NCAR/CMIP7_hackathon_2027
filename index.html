@@ -12,11 +12,6 @@ layout: default
       <div><dt>Where</dt><dd>{{ e.location }}</dd></div>
       <div><dt>Apply by</dt><dd>{{ e.application_deadline }}</dd></div>
     </dl>
-    {% if e.application_url != "" %}
-      <a class="button" href="{{ e.application_url }}">Apply now</a>
-    {% else %}
-      <span class="button button-disabled">Applications opening soon</span>
-    {% endif %}
 
     <div class="hero-supporters">
       <p class="hero-supporters-label">Supported by</p>
@@ -59,6 +54,13 @@ layout: default
           <h3>{{ h.city }}</h3>
           <p class="hub-where">{% if h.venue_url %}<a href="{{ h.venue_url }}">{{ h.venue }}</a>{% else %}{{ h.venue }}{% endif %}<br>{{ h.country }}</p>
           {% if h.details != "" %}<p>{{ h.details }}</p>{% endif %}
+          <div class="card-apply">
+            {% if h.application_url and h.application_url != "" %}
+              <a class="button" href="{{ h.application_url }}">Apply now</a>
+            {% else %}
+              <span class="button button-disabled">Applications opening soon</span>
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -76,11 +78,7 @@ layout: default
     <p>If we receive more applications than places, or more requests for travel support than funding
        available, we will select participants based on career stage and the relevance of their
        interests and proposed research to the hackathon goals.</p>
-    {% if e.application_url != "" %}
-      <a class="button" href="{{ e.application_url }}">Go to the application form</a>
-    {% else %}
-      <p class="muted">The application form will be posted here when it opens.</p>
-    {% endif %}
+    <p class="muted">Apply to the relevant node using the links above.</p>
   </div>
 </section>
 

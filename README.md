@@ -9,7 +9,7 @@ Most updates don't need any HTML:
 | What | Where |
 |------|-------|
 | Title, description, dates, application link, contact email | `_config.yml` |
-| Hub locations | `_data/hubs.yml` |
+| Hub locations and per-hub application links | `_data/hubs.yml` |
 | Supporter logos | `_data/supporters.yml` (image files in `logos/`) |
 | Organizing contacts (by hub) | `_data/contacts.yml` |
 | Organizing committee | `_data/committee.yml` |
@@ -20,11 +20,12 @@ Most updates don't need any HTML:
 
 You can edit any of these in the GitHub web interface. The site rebuilds automatically after each commit.
 
-## Application form
+## Application forms
 
-Leave `application_url` in `_config.yml` empty until the form is ready to go public.
+Each hub has its own `application_url` in `_data/hubs.yml`. Leave it empty until
+that hub's form is ready to go public — the card shows "Applications opening soon".
 Anything committed to the repo is visible, even if the page doesn't display it.
-When you add the link, an "Apply now" button appears automatically.
+When you add the link, an "Apply now" button appears on that hub's card.
 
 ## Publishing
 
