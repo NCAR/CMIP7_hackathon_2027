@@ -12,3 +12,7 @@
 - name: "NSF National Center for Atmospheric Research"
   logo: "logos/logo-ncar.avif"
   url: "https://ncar.ucar.edu/"
+- name: "MEXT-Program for The Advanced Studies of Climate Change Projection (SENTAN)"
+  logo: "logos/SENTAN.png"
+  fill: true   # tall logo with small text, so give it the full tile height
+  url: "https://www.jamstec.go.jp/sentan/eng/"
