@@ -1,6 +1,6 @@
 # Logos shown under "Supported by" in the top banner. Image files live in /logos.
 - name: "CLIVAR"
-  logo: "logos/clivar.jpeg"
+  logo: "logos/CLIVAR_RGB_logo-baseline_positive.png"
   url: "https://www.clivar.org/"
 - name: "CMIP International Project Office"
   logo: "logos/CMIP_Logo_RGB_Positive.webp"
