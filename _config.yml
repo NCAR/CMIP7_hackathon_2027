@@ -12,7 +12,7 @@ url: "https://ncar.github.io"
 
 # While true, a banner says the site is under construction and search engines
 # are asked not to index it. Set to false when the site is ready to launch.
-under_construction: true
+under_construction: false 
 
 # Event details shown on the home page. Anything marked TBD is a placeholder.
 event:
