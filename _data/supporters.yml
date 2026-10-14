@@ -16,3 +16,7 @@
   logo: "logos/SENTAN.png"
   fill: true   # tall logo with small text, so give it the full tile height
   url: "https://www.jamstec.go.jp/sentan/eng/"
+- name: "National Center for High-performance Computing (NCHC), Taiwan"
+  logo: "logos/taiwan_hpc.png"
+  fill: true   # very wide logo, so trim padding to keep the text legible
+  url: "https://www.nchc.org.tw/"
