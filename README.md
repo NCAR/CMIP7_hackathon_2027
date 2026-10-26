@@ -26,6 +26,7 @@ Each hub has its own `application_url` in `_data/hubs.yml`. Leave it empty until
 that hub's form is ready to go public — the card shows "Applications opening soon".
 Anything committed to the repo is visible, even if the page doesn't display it.
 When you add the link, an "Apply now" button appears on that hub's card.
+To close a hub's applications, add `applications_closed: true` to that hub.
 
 ## Publishing
 

@@ -55,7 +55,9 @@ layout: default
           <p class="hub-where">{% if h.venue_url %}<a href="{{ h.venue_url }}">{{ h.venue }}</a>{% else %}{{ h.venue }}{% endif %}<br>{{ h.country }}</p>
           {% if h.details != "" %}<p>{{ h.details }}</p>{% endif %}
           <div class="card-apply">
-            {% if h.application_url and h.application_url != "" %}
+            {% if h.applications_closed %}
+              <span class="button button-disabled">Applications are now closed</span>
+            {% elsif h.application_url and h.application_url != "" %}
               <a class="button" href="{{ h.application_url }}">Apply now</a>
             {% else %}
               <span class="button button-disabled">Applications opening soon</span>

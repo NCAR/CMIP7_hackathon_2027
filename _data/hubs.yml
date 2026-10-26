@@ -3,12 +3,14 @@
 # "application_url" is optional — if set, the hub shows an "Apply now" button;
 # if empty, it shows "Applications opening soon". Anything committed here is
 # visible to anyone who views the repository.
+# "applications_closed: true" replaces the button with "Applications are now closed".
 - city: "Boulder"
   country: "Colorado, USA"
   venue: "NSF NCAR Mesa Laboratory"
   venue_url: "https://scied.ucar.edu/visit/plan-trip"
   primary: true
   details: ""
+  applications_closed: true
   application_url: "https://docs.google.com/forms/d/e/1FAIpQLSfst_PM3Jd8-8neScipMT6i0EB9VwBuEzIoeNq6P59av4TlFA/viewform"
 - city: "Taipei"
   country: "Taiwan"
